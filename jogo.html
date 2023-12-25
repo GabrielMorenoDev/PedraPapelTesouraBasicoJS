@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PedraPapelTesoura</title>
-    <script src="jogo.js"></script>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="div-title">Pedra - Papel - Tesoura</div>
+    <h1>Pedra - Papel - Tesoura</h1>
     <div id="div-btn">
-        <button>PEDRA</button>
-        <button>PAPEL</button>
-        <button>TESOURA</button>
+        <button onclick="jogar('pedra')">PEDRA</button>
+        <button onclick="jogar('papel')">PAPEL</button>
+        <button onclick="jogar('tesoura')">TESOURA</button>
     </div>
-    <div id="div-player-choice">PLAYER</div>
-    <div id="div-computer-choice">COMPUTER</div>
+    <div id="div-player-choice">JOGADOR</div>
+    <div id="div-computer-choice">COMPUTADOR</div>
     <div id="div-result"></div>
-    <div id="div-player-score">Player score: </div>
-    <div id="div-computer-score">Computer score: </div>
+    <div id="div-player-score">Pontuação do jogador: 0</div>
+    <div id="div-computer-score">Pontuação do computador: 0</div>
+    <script src="jogo.js"></script>
 </body>
 </html>
